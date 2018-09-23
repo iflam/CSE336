@@ -1,0 +1,20 @@
+/* The W3C Core Styles Copyright (c) 1998 W3C (MIT, INRIA, Keio), All Rights
+Reserved. W3C liability, trademark, document use and software licensing rules
+apply. See http://www.w3.org/Consortium/Legal/ipr-notice.html
+
+This stylesheet has been served in a form to avoid known bugs in your user
+agent's CSS implementation. Copying and serving this stylesheet to other
+agents may lead to unexpected results. Please refer to its address rather than
+copy it. */
+.content{
+	background-color:#e8edff;
+}
+.text-inner{
+	background-color:#e8edff;
+}
+.content-inner{
+	background-color:#d1dbff;
+}
+legend{
+	background-color:#b5c5ff;
+}
