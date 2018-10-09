@@ -24,7 +24,7 @@
 </head>
 
 <body>
-		<form method="post" action="./Submit.html" id="form1">
+		<form method="post" onsubmit="validatePreference();return false" id="form1">
 		<div id="globalnav" class="text-light navbar navbar-expand-md navbar-dark bg-dark">
 			<div class="mx-auto">
 				<a class="text-light" href="Home.html" title="Go to the BPL homepage.">Homepage</a> &nbsp;|&nbsp;
@@ -419,7 +419,7 @@
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tbody>
 					<tr>
-						<td align="center" style="height: 24px"><input class="btn btn-primary"  type="button" onclick="validatePreference()" name="submits" value="Submit Library Card Application" id="submits">  </td>
+						<td align="center" style="height: 24px"><input class="btn btn-primary"  type="submit" name="submits" value="Submit Library Card Application" id="submits">  </td>
 					</tr>
 				</tbody>
 			</table>
