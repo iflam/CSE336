@@ -1,6 +1,7 @@
 var req;
 var f;
 var t;
+
 function validatePreference(){
   //f = $("#drpnoticeMessage");
   //t = $("#drpnotice");

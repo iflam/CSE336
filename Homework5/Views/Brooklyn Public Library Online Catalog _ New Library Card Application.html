@@ -20,19 +20,12 @@
 	<link rel="stylesheet" href="../Options/css.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../Options/javascript.js"></script>
-	<script ty>
-	function countElements(){
-		doc = document;
-		elements = doc.getElementsByTagName("*");
-		alert(elements.length);
-	}
-	</script>
 
 </head>
 
 <body>
-		<button onclick="countElements()">CLICKME</button>
-		<form method="post" action="./Submit.html" id="form1">
+	<form method="post" onsubmit="return validatePreference()" id="form1">
+
 		<div id="globalnav" class="text-light navbar navbar-expand-md navbar-dark bg-dark">
 			<div class="mx-auto">
 				<a class="text-light" href="Home.html" title="Go to the BPL homepage.">Homepage</a> &nbsp;|&nbsp;
@@ -54,14 +47,22 @@
 								<table border="0" cellspacing="0" cellpadding="3" style="width: 332px">
 									<tbody>
 										<tr>
+											<td>Card Number
+                      (3 digits) </td>
+											<td><input type="text" id="cnum" name="cnum" class="form-control" maxlength="3"/></td>
+										</tr>
+										<tr>
+											<td>Name</td>
+											<td><input type="text" id="nickname" class="form-control" name="nickname" maxlength="12" /></td>
+										</tr>
+										<tr>
+										<tr>
 											<td valign="top" style="width: 105px" nowrap="nowrap"><span class="text-danger">*</span> Card:</td>
-											<td colspan="3"
+											<td colspan="3">
 												<table id="rdotype">
 													<tbody>
 														<tr>
-															<td><input class="form-check-input" id="rdotype_0" type="radio" name="rdotype" value="Young">
-																	<label class="form-check-label" for="rdotype_0">Young Adults (Ages 13 - 16)</label>
-															</td>
+															<td><input class="form-check-input" id="rdotype_0" type="radio" name="rdotype" value="Young"><label class="form-check-label" for="rdotype_0">Young Adults (Ages 13 - 16)</label></td>
 														</tr>
 														<tr>
 															<td><input class="form-check-input" id="rdotype_1" type="radio" name="rdotype" value="Adult"><label class="form-check-label" for="rdotype_1">Adult (Ages 17 and over)</label></td>
@@ -141,8 +142,8 @@
 												<option value="za">Text Message</option>
 												<option value="p">Phone</option>
 											</select>
-											<span class="ml5 text-danger" id="drpnoticeMessage"></span>
-										</td>
+												<span class="ml5 text-danger" id="drpnoticeMessage"></span>
+											</td>
 										</tr>
 										<tr>
 											<td>Email address:</td>
@@ -366,8 +367,8 @@
     									<table id="rdopick">
 												<tbody><tr>
 													<td><input class="form-check-input"  id="rdopick_0" type="radio" name="rdopick" value="Pick up"><label class="form-check-label" for="rdopick_0">I will pick up my library card. </label></td>
-												</tr>
-												<tr>
+										</tr>
+										<tr>
 											<td><input class="form-check-input"  id="rdopick_1" type="radio" name="rdopick" value="Mail card"><label class="form-check-label" for="rdopick_1">Please mail my library card to me.</label></td>
 										</tr>
 									</tbody>
@@ -429,7 +430,7 @@
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tbody>
 					<tr>
-						<td align="center" style="height: 24px"><input class="btn btn-primary"  type="button" onclick="validatePreference()" name="submits" value="Submit Library Card Application" id="submits">  </td>
+						<td align="center" style="height: 24px"><input class="btn btn-primary"  type="submit" name="submits" value="Submit Library Card Application" id="submits">  </td>
 					</tr>
 				</tbody>
 			</table>

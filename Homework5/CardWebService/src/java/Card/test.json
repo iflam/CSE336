@@ -1,0 +1,14 @@
+{
+    "cards":[
+    {
+        "fname":"Itai",
+        "lname":"Flam",
+        "cnum":"123"
+    },
+    {
+        "fname":"Bob",
+        "lname":"Bradley",
+        "cnum":"124"
+    }
+    ]
+}
